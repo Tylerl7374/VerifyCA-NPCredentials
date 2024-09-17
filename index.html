@@ -3,26 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nurse Practitioner Credentials</title>
+    <title>Nurse Practitioner Credentials Verification</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        h1, h2 {
-            color: #333333; /* Charcoal color */
-        }
-        ul {
-            list-style-type: none;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
             padding: 0;
+            background-color: #f5f5f5;
         }
-        li {
-            margin-bottom: 5px;
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            font-size: 2.5em;
+            margin-top: 10px;
+        }
+        h2 {
+            color: #444;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        p, ul {
+            font-size: 1.1em;
+            line-height: 1.6em;
+            color: #555;
         }
         .profile-photo {
             display: block;
-            margin: 0 auto 10px auto; /* Centered with bottom margin */
-            width: 80px; /* Adjust the size as needed */
+            margin: 0 auto 20px auto;
+            width: 200px;  /* Increased size for better readability */
             height: auto;
         }
         .valid-text {
@@ -37,69 +53,100 @@
             font-weight: bold;
             font-style: italic;
         }
+        .bordered-box {
+            border: 2px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .header-logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 40px;
+        }
         .translate-link {
             text-align: right;
             margin-top: 10px;
         }
+        .verification-section {
+            border-left: 5px solid #4CAF50;
+            padding-left: 15px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            padding: 15px;
+        }
+        .verified-badge {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
-    <!-- Translation Link -->
-    <div class="translate-link">
-        <a href="#" onclick="translatePage()">Translate to Spanish (MX)</a>
+    <div class="container">
+        <!-- Translation Link -->
+        <div class="translate-link">
+            <a href="#" onclick="translatePage()">Translate to Spanish (MX)</a>
+        </div>
+
+        <!-- Centered Logo -->
+        <div class="header-logo">
+            <img src="credential_authority.jpg" alt="Logo" class="profile-photo">
+        </div>
+
+        <!-- Main Title -->
+        <h1>Verification of Credentials</h1>
+
+        <!-- Verified Badge -->
+        <div class="verified-badge">✔ Verified License</div>
+
+        <!-- License Information Section -->
+        <div class="verification-section">
+            <p><strong>Tyler Robert Lopez Perez</strong> holds valid credentials under the California Board of Registered Nursing and is authorized to perform the duties of a Psychiatric-Mental Health Nurse Practitioner (PMHNP).</p>
+            <ul>
+                <li><strong>License Number:</strong> A-1263588980</li>
+                <li><strong>Issuing Authority:</strong> California Board of Registered Nursing</li>
+                <li><strong>License Status:</strong> <span class="status-active">Active</span></li>
+                <li><strong>Expiration Date:</strong> <span class="important">December 22nd, 2029</span></li>
+            </ul>
+        </div>
+
+        <!-- Education Section -->
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Alma Mater:</strong> Oregon State Health and Science University</li>
+            <li><strong>Graduation Year:</strong> 2018</li>
+        </ul>
+
+        <!-- Areas of Expertise Section -->
+        <h2>Areas of Expertise</h2>
+        <ul>
+            <li>Psychiatric-Mental Health Nursing</li>
+            <li>Pharmacology</li>
+            <li>Psychotherapy</li>
+            <li>Patient Education and Counseling</li>
+        </ul>
+
+        <!-- Disciplinary Action Section -->
+        <h2>Disciplinary Action</h2>
+        <p>
+            On <span class="important">August 27th, 2020</span>, a disciplinary action was issued to Tyler Robert Lopez Perez. The nurse practitioner delegated a Certified Nursing Assistant (CNA) to administer medication to a patient, resulting in the patient receiving an incorrect dosage of <span class="important">morphine</span>, leading to an overdose. The patient was promptly treated with <span class="important">Naloxone HCL</span> and stabilized within 30 minutes. As a result, a written disciplinary order was issued, requiring this statement to be attached until <span class="important">2025</span>. The nurse practitioner reported the incident to the Board of Nursing, and the CNA's certification was subsequently revoked.
+        </p>
+
+        <!-- Footer Section -->
+        <footer>
+            This information is provided by the California Board of Registered Nursing. For official records, contact the Central Oregon Supreme Circut Court. +1 (541) 878-9906
+        </footer>
     </div>
-
-    <!-- Centered Logo -->
-    <img src="./credential_authority.JPG" alt="Logo" class="profile-photo">
-
-    <h1>Verification of Credentials</h1>
-
-    <p>
-        <strong>Tyler Robert Lopez Perez</strong> holds valid credentials under the California Board of Registered Nursing and is authorized to perform the duties of a Psychiatric-Mental Health Nurse Practitioner (PMHNP). These duties include conducting physical and mental health assessments, providing psychotherapy, designing treatment plans, prescribing <span class="important">psychopharmaceuticals</span> and other medications, offering counseling, collaborating with other healthcare professionals, and educating patients and communities on mental health and well-being. The exact responsibilities may vary based on specialty, patient needs, and practice settings.
-    </p>
-
-    <h2>Education</h2>
-    <ul>
-        <li><strong>Alma Mater:</strong> Oregon State Health and Science University</li>
-        <li><strong>Graduation Year:</strong> 2018</li>
-    </ul>
-
-    <h2>Professional Details</h2>
-    <ul>
-        <li><strong>License Number:</strong> A-1263588980</li>
-        <li><strong>Issuing Authority:</strong> California Board of Registered Nursing</li>
-        <li><strong>License Status:</strong> <span class="status-active">Active</span></li>
-        <li><strong>Expiration Date:</strong> <span class="important">December 22nd, 2029</span></li>
-    </ul>
-
-    <h2>Areas of Expertise</h2>
-    <ul>
-        <li>Psychiatric-Mental Health Nursing</li>
-        <li>Pharmacology</li>
-        <li>Psychotherapy</li>
-        <li>Patient Education and Counseling</li>
-    </ul>
-
-    <h2>Professional Affiliations</h2>
-    <ul>
-        <li>American Nurses Association (ANA)</li>
-        <li>American Psychiatric Nurses Association (APNA)</li>
-    </ul>
-
-    <h2>Disciplinary Action</h2>
-    <p>
-        On <span class="important">August 27th, 2020</span>, a disciplinary action was issued to Tyler Robert Lopez Perez. The nurse practitioner delegated a Certified Nursing Assistant (CNA) to administer medication to a patient, resulting in the patient receiving an incorrect dosage of <span class="important">morphine</span>, leading to an overdose. The patient was promptly treated with <span class="important">Naloxone HCL</span> and stabilized within 30 minutes. As a result, a written disciplinary order was issued, requiring this statement to be attached until <span class="important">2025</span>. The nurse practitioner reported the incident to the Board of Nursing, and the CNA's certification was subsequently revoked.
-    </p>
-
-    <h2>Additional Information</h2>
-    <p>
-        The licensee is transferring credentials to <span class="important">Estados Unidos Mexicanos</span> to continue practice in the city of <span class="important">Tijuana, Baja California</span>, Mexico. This process is expected to take up to <span class="important">4 months</span>.
-    </p>
-
-    <h2>Contact Information</h2>
-    <p>
-        For verification purposes, this is a secure website to verify credentials and review any disciplinary actions. All information is either self-reported or provided by the California Board of Registered Nursing. The license number provided is <span class="valid-text">VALID</span>.
-    </p>
 
     <!-- Translation Script -->
     <script>
